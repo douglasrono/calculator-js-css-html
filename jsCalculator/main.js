@@ -11,7 +11,7 @@ let decimalAdded = false;
 
 const operators = ["+", "-", "x", "÷"];
 
-function handleKeyPress (e) {
+const handleKeyPress = (e) => {
   const key = e.target.dataset.key;
   const lastChar = operation[operation.length - 1];
 
@@ -53,7 +53,7 @@ function handleKeyPress (e) {
 
 }
 
-function evaluate(e) {
+const evaluate = (e) => {
   const key = e.target.dataset.key;
   const lastChar = operation[operation.length - 1];
 
